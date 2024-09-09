@@ -1,0 +1,12 @@
+header{
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(03, 22, 55);
+}
+
+ .första-nav{
+    font-size: 40px;
+    flex-direction: row;
+    list-style-type: none;
+}
