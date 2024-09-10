@@ -5,8 +5,19 @@ header{
     background-color: rgb(03, 22, 55);
 }
 
- .första-nav{
-    font-size: 40px;
+.first{
+    font-size: 24px;
     flex-direction: row;
     list-style-type: none;
+}
+.produkter{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+.produkter img{
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
