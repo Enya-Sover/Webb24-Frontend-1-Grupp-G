@@ -39,7 +39,7 @@ body{
     border-radius: 5%;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    justify-content: space-between; /* skapar utrymme mellan bild och text*/
     padding: 22px;
     text-align:left 10%;
 }
