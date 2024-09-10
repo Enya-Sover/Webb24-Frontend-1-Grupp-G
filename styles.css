@@ -3,10 +3,58 @@ header{
     display: flex;
     justify-content: center;
     background-color: rgb(03, 22, 55);
+    padding: 0px;
+}
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+.first{
+    display: grid; 
+    gap: 5px;
+   
+}
+.first h2{
+    /* grid-template-rows: auto; */
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+    justify-items: center;
 }
 
- .första-nav{
-    font-size: 40px;
-    flex-direction: row;
-    list-style-type: none;
+.grid-container img{
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    
+
+}
+.grid-container .produkt{
+    border: 2px solid rgb(03 ,22 ,55);
+    margin: 10px;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* skapar utrymme mellan bild och text*/
+    padding: 22px;
+    text-align:left 10%;
+}
+
+.köpknapp{
+    height: 30px;
+    width: 55px;
+    background-color: beige;
+    border-radius: 15%;
+}
+.köpknapp:hover{
+    background-color: bisque;
+
+}
+.köpknapp:active{
+    background-color: blue;
+    color: white;
 }
