@@ -1,0 +1,161 @@
+body > a{
+  text-decoration: none;
+}
+
+
+header{
+  color: white;
+  display: flex;
+  font-family: "Open Sans", Arial, Lucida, sans-serif;
+  justify-content: center;
+  background-color: rgb(03, 22, 55);
+  padding: 0px;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color:  white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+main {
+  background-color: white;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  margin-left: 25%;
+  margin-right: 25%;
+  min-height: 70vh;
+  padding: 15px;
+  box-shadow: 2px 2px 5px 4px;
+}
+
+#headline-1 {
+  text-align: center;
+}
+
+#login-header a{
+    position: relative;
+    left: 10vh;
+}
+
+#home-link {
+    text-align: left;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+#logo img {
+  height: 10vh;
+  object-fit: contain;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#logo img:hover {
+  transform: scale(1.1);
+}
+
+.headline3{
+    text-align: center;
+    cursor: pointer;
+}
+
+.headline3:hover{
+    text-decoration: underline;
+}
+
+
+.separator {
+  display: flex;
+  align-items: center; 
+ 
+}
+
+.separator hr {
+  flex: 1; 
+}
+
+.separator span {
+  padding: 10px; 
+  
+}
+
+input[type="text"] {
+    width: 100%; /* Justera till önskad bredd, t.ex. 300px */
+    height: 40px; /* Justera till önskad höjd */
+    box-sizing: border-box;
+
+  }
+
+
+
+ input[type="password"] {
+    width: 100%; /* Justera till önskad bredd, t.ex. 300px */
+    height: 40px; /* Justera till önskad höjd */
+    box-sizing: border-box;
+
+    
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 2vh;
+    padding: 2vh;
+    font-size: 1.3rem;
+    background-color: rgb(6, 49, 49);
+    color: white;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: rgb(39, 77, 111);
+
+  }
+
+
+
+  .forgot-password{
+    text-align: center;
+    margin-top: 2vh;
+  }
+
+  .forgot-password a{
+    text-decoration: none;
+  }
+
+  .forgot-password a:hover{
+    text-decoration: underline;
+  }
+  
+  .headline-4{
+    text-align: center;
+  }
+
+  .create-account{
+    text-align: center;
+  }
+
+  .create-account a{
+    text-decoration: none;
+  }
+
+  .create-account:hover{
+    text-decoration: underline;
+  }
+
+  @media screen and (max-width: 425px){
+    header > h1{
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    main{
+      margin: 0 auto;
+    }
+  }
+ 
