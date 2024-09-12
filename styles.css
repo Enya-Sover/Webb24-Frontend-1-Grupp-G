@@ -1,9 +1,15 @@
 header{
     color: white;
     display: flex;
+    font-family: "Open Sans", Arial, Lucida, sans-serif;
     justify-content: center;
     background-color: rgb(03, 22, 55);
     padding: 0px;
+    font-size: 2.2vw ;
+    
+}
+a{
+    text-decoration: none;
 }
 body{
     background-color: rgb(255, 255, 255);
@@ -13,11 +19,11 @@ body{
 .first{
     display: grid; 
     gap: 5px;
+    font-size: 3vw;
+    
    
 }
-.first h2{
-    /* grid-template-rows: auto; */
-}
+
 .grid-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -42,13 +48,17 @@ body{
     justify-content: space-between; /* skapar utrymme mellan bild och text*/
     padding: 22px;
     text-align:left 10%;
+    font-size: 2.2vw;
 }
 
 .köpknapp{
-    height: 30px;
-    width: 55px;
-    background-color: beige;
+    height: 4.5vw;
+    width: 15vw;
+    background-color: rgb(244, 244, 236);
     border-radius: 15%;
+    font-size: 2.2vw;
+    margin-left: 4vw;
+    
 }
 .köpknapp:hover{
     background-color: bisque;
