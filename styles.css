@@ -49,6 +49,7 @@ body{
   object-fit: cover;
 }
 
+
 main {
   background-color: white;
   margin-top: 4vh;
@@ -120,8 +121,6 @@ input[type="text"] {
     box-sizing: border-box;
   }
 
-
-
  input[type="password"] {
     width: 100%; /* Justera till önskad bredd, t.ex. 300px */
     height: 40px; /* Justera till önskad höjd */
@@ -133,6 +132,7 @@ input[type="text"] {
     border: 2px solid rgb(03 ,22 ,55);
     margin: 10px;
     border-radius: 5%;
+    /* flex-wrap: wrap; */
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* skapar utrymme mellan bild och text*/
