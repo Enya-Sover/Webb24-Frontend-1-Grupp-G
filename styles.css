@@ -18,10 +18,22 @@ body{
     min-height: 100vh;
 
 }
+.sidebar{
+    display: flex;
+    justify-content: center;
+}
+.sidebar button{
+  width: 100px;
+}
+
 .first{
     display: grid; 
     gap: 5px;
-    font-size: 3vw;
+}
+.first h2{
+
+  font-size: 3.5vw;
+  margin-left: 10%;
 }
 
 .grid-container{
@@ -133,11 +145,10 @@ input[type="text"] {
     margin: 5px;
     height: 5.5vw;
     width: 15vw;
-    max-height: 35px;
-    max-width: 75px;
+    max-height: 55px;
+    max-width: 150px;
     background-color: rgb(244, 244, 236);
     border-radius: 15%;
-    font-size: 2.2vw;
     margin-left: 4vw;
 }
 .köpknapp:hover{
