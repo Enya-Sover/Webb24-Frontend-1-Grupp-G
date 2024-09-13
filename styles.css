@@ -1,77 +1,117 @@
-header{
-    color: white;
+header {
+  color: white;
+  display: flex;
+  font-family: "Open Sans", Arial, Lucida, sans-serif;
+  justify-content: center;
+  background-color: rgb(03, 22, 55);
+  padding: 0px;
+  font-size: 2.2vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", Arial, Lucida, sans-serif;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 720px) {
+  .sidebar {
     display: flex;
-    font-family: "Open Sans", Arial, Lucida, sans-serif;
     justify-content: center;
-    background-color: rgb(03, 22, 55);
-    padding: 0px;
-    font-size: 2.2vw ;
-}
-a{
-    text-decoration: none;
-}
-body{
-    background-color:  white;
-    margin: 0;
-    padding: 0;
-    font-family: "Open Sans", Arial, Lucida, sans-serif;
-    min-height: 100vh;
+    gap: 10px;
+  }
+  
+  .innehåll{
+    flex-grow: 1;
 
-}
-.sidebar{
-    display: flex;
-    justify-content: center;
-}
-.sidebar button{
-  width: 100px;
-}
-
-.first{
-    display: grid; 
-    gap: 5px;
-}
-.first h2{
-
-  font-size: 3.5vw;
-  margin-left: 10%;
-}
-
-.grid-container{
+  }
+  .grid-container{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 15px;
-    justify-items: center;
-}
-.grid-container img{
-  max-width: 400px;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .grid-container img{
+    width: 100%;
+    height: au;
+  }
+
+
 }
 
+@media screen and (min-width: 720px) {
+  .allt {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 120vh;
+    border-right: 1px solid rgb(03, 22, 55);
+    margin-right: 20px;
+    padding: 20px;
+  }
+
+  .sidebar a {
+    margin: 10px;
+    padding: 5px;
+  }
+
+  .first {
+    display: grid;
+    align-items: center;
+    
+  }
+
+ 
+
+  .grid-container img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
 
 main {
   background-color: white;
-  margin-top: 4vh;
-  margin-bottom: 4vh;
   margin-left: 25%;
   margin-right: 25%;
   min-height: 70vh;
   padding: 15px;
   box-shadow: 2px 2px 5px 4px;
 }
+.välkomsttext {
+  font-size: 3.5vw;
+  display: flex;
+  justify-content: center;
+
+}
+.sidebar a {
+  margin: 2%;
+  color: black;
+}
 
 #headline-1 {
   text-align: center;
 }
 
-#login-header a{
-    position: relative;
-    left: 10vh;
+#login-header a {
+  position: relative;
+  left: 10vh;
 }
 
 #home-link {
-    text-align: left;
+  text-align: left;
 }
 
 #logo {
@@ -92,122 +132,131 @@ main {
   transform: scale(1.1);
 }
 
-.headline3{
-    text-align: center;
-    cursor: pointer;
+.headline3 {
+  text-align: center;
+  cursor: pointer;
 }
 
-.headline3:hover{
-    text-decoration: underline;
+.headline3:hover {
+  text-decoration: underline;
 }
 
 .separator {
   display: flex;
-  align-items: center; 
+  align-items: center;
 }
 
 .separator hr {
-  flex: 1; 
+  flex: 1;
 }
 
 .separator span {
-  padding: 10px; 
-  
+  padding: 10px;
+
 }
 
 input[type="text"] {
-    width: 100%; /* Justera till önskad bredd, t.ex. 300px */
-    height: 40px; /* Justera till önskad höjd */
-    box-sizing: border-box;
-  }
-
- input[type="password"] {
-    width: 100%; /* Justera till önskad bredd, t.ex. 300px */
-    height: 40px; /* Justera till önskad höjd */
-    box-sizing: border-box;
-  }
-
-
-.grid-container .produkt{
-    border: 2px solid rgb(03 ,22 ,55);
-    margin: 10px;
-    border-radius: 5%;
-    /* flex-wrap: wrap; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* skapar utrymme mellan bild och text*/
-    padding: 22px;
-    text-align:left 10%;
-    font-size: clamp(8px, 2.2vw, 25px);
+  width: 100%;
+  /* Justera till önskad bredd, t.ex. 300px */
+  height: 40px;
+  /* Justera till önskad höjd */
+  box-sizing: border-box;
 }
 
-.köpknapp{
-    margin: 5px;
-    height: 5.5vw;
-    width: 15vw;
-    max-height: 55px;
-    max-width: 150px;
-    background-color: rgb(244, 244, 236);
-    border-radius: 15%;
-    margin-left: 4vw;
+input[type="password"] {
+  width: 100%;
+  /* Justera till önskad bredd, t.ex. 300px */
+  height: 40px;
+  /* Justera till önskad höjd */
+  box-sizing: border-box;
 }
-.köpknapp:hover{
-    background-color: bisque;
+.grid-container .produkt {
+  border: 2px solid rgb(03, 22, 55);
+  margin: 10px;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 22px;
+  text-align: left 10%;
+  font-size: clamp(10px, 2vw, 25px);
 }
-.köpknapp:active{
-    background-color: blue;
-    color: white;
-    cursor: pointer;
-  }
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  justify-items: center;
+  /* justify-content: center; */
+}
+.köpknapp {
+  margin: 5px;
+  height: 5.5vw;
+  width: 15vw;
+  max-height: 55px;
+  max-width: 150px;
+  background-color: rgb(244, 244, 236);
+  border-radius: 15%;
+  margin-left: 4vw;
+}
 
-  input[type="submit"] {
-    width: 100%;
-    margin-top: 2vh;
-    padding: 2vh;
-    font-size: 1.3rem;
-    background-color: rgb(6, 49, 49);
-  }
+.köpknapp:hover {
+  background-color: bisque;
+}
 
-  input[type="submit"]:hover {
-    background-color: rgb(39, 77, 111);
-  }
+.köpknapp:active {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
 
-  .forgot-password{
+input[type="submit"] {
+  width: 100%;
+  margin-top: 2vh;
+  padding: 2vh;
+  font-size: 1.3rem;
+  background-color: rgb(6, 49, 49);
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(39, 77, 111);
+}
+
+.forgot-password {
+  text-align: center;
+  margin-top: 2vh;
+}
+
+.forgot-password a {
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+.headline-4 {
+  text-align: center;
+}
+
+.create-account {
+  text-align: center;
+}
+
+.create-account a {
+  text-decoration: none;
+}
+
+.create-account:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 425px) {
+  header>h1 {
     text-align: center;
-    margin-top: 2vh;
+    font-size: 1.5rem;
   }
 
-  .forgot-password a{
-    text-decoration: none;
+  main {
+    margin: 0 auto;
   }
-
-  .forgot-password a:hover{
-    text-decoration: underline;
-  }
-  
-  .headline-4{
-    text-align: center;
-  }
-
-  .create-account{
-    text-align: center;
-  }
-
-  .create-account a{
-    text-decoration: none;
-  }
-
-  .create-account:hover{
-    text-decoration: underline;
-  }
-
-  @media screen and (max-width: 425px){
-    header > h1{
-      text-align: center;
-      font-size: 1.5rem;
-    }
-    main{
-      margin: 0 auto;
-    }
-  }
- 
+}
