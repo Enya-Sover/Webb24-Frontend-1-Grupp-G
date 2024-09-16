@@ -3,7 +3,7 @@ header {
   display: flex;
   font-family: "Open Sans", Arial, Lucida, sans-serif;
   justify-content: center;
-  background-color: rgb(03, 22, 55);
+  background-color: rgb(02, 18, 36);
   padding: 0px;
   font-size: 2.2vw;
 }
@@ -63,7 +63,7 @@ body {
     flex-direction: column;
     width: 200px;
     height: 265vh;
-    border-right: 1px solid rgb(03, 22, 55);
+    border-right: 1px solid rgb(02, 18, 36);
     margin-right: 20px;
     padding: 20px;
   }
@@ -179,7 +179,7 @@ input[type="password"] {
   box-sizing: border-box;
 }
 .grid-container .produkt {
-  border: 2px solid rgb(03, 22, 55);
+  border: 2px solid rgb(02, 18, 36);
   margin: 10px;
   border-radius: 5%;
   display: flex;
