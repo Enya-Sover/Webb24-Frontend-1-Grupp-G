@@ -26,6 +26,10 @@ body {
     justify-content: center;
     gap: 10px;
   }
+  .välkomsttext{
+
+  font-size: 3.5vw;
+  }
   
   .innehåll{
     flex-grow: 1;
@@ -50,6 +54,9 @@ body {
     flex-direction: row;
     align-items: flex-start;
   }
+  .välkomsttext{
+    font-size: 3vw;
+  }
   
   .sidebar {
     display: flex;
@@ -72,14 +79,16 @@ body {
     
   }
 
- 
-
   .grid-container img {
     max-width: 400px;
     width: 100%;
     height: auto;
     object-fit: cover;
   }
+}
+.bildtext{
+display: flex;
+flex-direction: column;
 }
 
 main {
@@ -91,7 +100,6 @@ main {
   box-shadow: 2px 2px 5px 4px;
 }
 .välkomsttext {
-  font-size: 3.5vw;
   display: flex;
   justify-content: center;
 
@@ -186,7 +194,6 @@ input[type="password"] {
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
   justify-items: center;
-  /* justify-content: center; */
 }
 .köpknapp {
   margin: 5px;
