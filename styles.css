@@ -30,7 +30,7 @@ body {
 
   font-size: 3.5vw;
   }
-  
+
   .grid-container{
     display: grid;
     grid-template-columns: 1fr;
