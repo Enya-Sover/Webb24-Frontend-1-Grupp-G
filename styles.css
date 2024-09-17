@@ -224,7 +224,7 @@ input[type="password"] {
     margin-top: 2vh;
     padding: 2vh;
     font-size: 1.3rem;
-    background-color: rgb(03, 22, 55);
+    background-color:rgb(02, 18, 36);
     color: white;
   }
 
@@ -232,6 +232,12 @@ input[type="password"] {
     background-color: rgb(37, 77, 105);
     cursor: pointer;
   }
+  .forgot-password {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+    
 
 .forgot-password a {
   text-decoration: none;
@@ -284,6 +290,7 @@ input[type="password"] {
     }
     .main-login{
       margin: 0 auto;
+      height: 100vh;
     }
   }
   @media screen and (min-width: 768px) and (max-width: 1023px){
