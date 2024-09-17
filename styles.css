@@ -225,14 +225,19 @@ input[type="submit"] {
   background-color: rgb(6, 49, 49);
 }
 
-input[type="submit"]:hover {
-  background-color: rgb(39, 77, 111);
-}
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 2vh;
+    padding: 2vh;
+    font-size: 1.3rem;
+    background-color: rgb(03, 22, 55);
+    color: white;
+  }
 
-.forgot-password {
-  text-align: center;
-  margin-top: 2vh;
-}
+  input[type="submit"]:hover {
+    background-color: rgb(37, 77, 105);
+    cursor: pointer;
+  }
 
 .forgot-password a {
   text-decoration: none;
@@ -258,13 +263,38 @@ input[type="submit"]:hover {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 425px) {
-  header>h1 {
+  .forgot-password a:hover{
+    text-decoration: underline;
+  }
+  
+  .headline-4{
     text-align: center;
-    font-size: 1.5rem;
   }
 
-  main {
-    margin: 0 auto;
+  .create-account{
+    text-align: center;
   }
-}
+
+  .create-account a{
+    text-decoration: none;
+  }
+
+  .create-account:hover{
+    text-decoration: underline;
+  }
+
+  @media screen and (max-width: 481px){
+    header > h1{
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    .main-login{
+      margin: 0;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1023px){
+    .main-login{
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+  }
