@@ -131,6 +131,8 @@ flex-direction: column;
 
 .main-login {
   background-color: white;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
   margin-left: 25%;
   margin-right: 25%;
   min-height: 70vh;
@@ -217,14 +219,6 @@ input[type="password"] {
   box-sizing: border-box;
 }
 
-input[type="submit"] {
-  width: 100%;
-  margin-top: 2vh;
-  padding: 2vh;
-  font-size: 1.3rem;
-  background-color: rgb(6, 49, 49);
-}
-
   input[type="submit"] {
     width: 100%;
     margin-top: 2vh;
@@ -289,7 +283,7 @@ input[type="submit"] {
       font-size: 1.5rem;
     }
     .main-login{
-      margin: 0;
+      margin: 0 auto;
     }
   }
   @media screen and (min-width: 768px) and (max-width: 1023px){
